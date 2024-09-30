@@ -20,6 +20,10 @@ For a deeper understanding of the ICP < > BTC integration, see the [Bitcoin inte
 
 * [x] Install the [IC SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/index.mdx).
 
+:::info 
+This example is designed to be deployed on the mainnet. It will return errors when deployed locally; these errors are expected.
+:::
+
 ## Step 1: Building and deploying sample code
 
 ### Clone the smart contract
@@ -29,7 +33,15 @@ To clone and build the smart contract in **Motoko**:
 ```bash
 git clone https://github.com/dfinity/examples
 cd examples/motoko/basic_bitcoin
-git submodule update --init --recursive
+```
+
+### Install MOPS
+
+[Install](https://docs.mops.one/quick-start#2-install-mops-cli) the MOPS package
+manager, e.g., by running
+
+```bash
+curl -fsSL cli.mops.one/install.sh | sh
 ```
 
 ### Acquire cycles to deploy
